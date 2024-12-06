@@ -1,0 +1,46 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+import Opciones from '../../components/opciones.astro';
+
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Basics</title>
+	</head>
+    <body>
+        
+        <Layout>
+            <section class ="bg-gray-300 h-auto flex">
+                <div class="flex flex-col p-10 w-80 h-auto">
+                    <Opciones
+                    href="/Dashboard"
+                    icono=""
+                    titulo="Dashboard"
+                    />
+                    <Opciones
+                    href="/"
+                    icono=""
+                    titulo="Applications"
+                    />
+                    <Opciones
+                    href="/"
+                    icono=""
+                    titulo="WordPress Sites"
+                    />
+                    <Opciones
+                    href="/"
+                    icono=""
+                    titulo="DNS"
+                    />
+        
+                </div>
+            </section>
+        </Layout>
+    </body>
+</html>
