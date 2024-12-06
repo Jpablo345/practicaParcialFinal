@@ -1,0 +1,53 @@
+---
+import Welcome from '../components/Welcome.astro';
+import Layout from '../layouts/Layout.astro';
+import { Icon } from "astro-icon/components";
+import Opciones from '../components/opciones.astro';
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+	<section class="bg-gray-300 h-auto flex">
+		<Opciones/>
+		<div class="container bg-white p-10 m-10 h-96 rounded-xl flex ">
+			<div class="flex-col">
+				<h1 class="font-semibold text-gray-600 text-xl pb-8 ">
+					Applications
+				</h1>
+				<h1 class="border-purple-700  border-t-4 rounded text-xs text-gray-600 pb-3 max-w-52">
+					You have 20 USD credits available
+				</h1>
+				<h1 class="font-semibold text-gray-600 text-xl pb-1 ">
+					Add your first service
+				</h1>
+				<h1 class="rounded text-base text-gray-600  max-w-96 pb-8">
+					As soon as you create your first application or database, it will show up here in a list.
+				</h1>
+				<div class="group relative inline-block z-10 ">
+					<ul class = "bg-purple-800 max-w-32 py-1 px-2 text-white gap-3 items-center flex rounded-md">
+						Add service
+						<Icon name="proicons:chevron-down" class =" size-4 "/>
+					</ul>
+					<div class = "group-hover:flex hidden absolute flex-col group-hover:bg-gray-300 p-4 w-32 h-auto rounded-md">
+						<a href="" class="cursor-pointer transition-colors duration-150 hover:text-black font-semibold block hover:bg-slate-500 rounded-md px-2">
+							Apliccarion
+						</a>
+						<a href="" class="cursor-pointer transition-colors duration-150 hover:text-black font-semibold block hover:bg-slate-500 rounded-md px-2">
+							Database
+						</a>
+					</div>
+				</div>
+
+
+			</div>
+			
+			<Icon name="proicons:app-store" class="size-80 ml-80" />
+		</div>
+		
+	</section>
+
+	
+	<Welcome />
+</Layout>

@@ -1,0 +1,51 @@
+---
+import { Icon } from "astro-icon/components";
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Basics</title>
+	</head>
+	<body>
+		<header class="bg-gray-800 h-auto w-full flex gap-20">
+			<div class="text-white font-bold text-5xl p-4 ">
+					KINSTA
+			</div>
+			<div class="group relative inline-block z-10">
+				<ul class="py-6 flex ">
+					<div class="text-white bg-opacity-15 bg-white rounded-md p-2 flex items-center" >
+						<Icon name="proicons:building-multiple" />
+						BUILDINGS
+						<Icon name="proicons:chevron-down" class =" size-4 justify-center"/>
+					</div>
+				</ul>
+
+			</div>
+			<div class="  flex flex-row-reverse items-center gap-10 ml-96">
+				<div class=" flex text-white gap-3 cursor-pointer items-center">
+					<Icon name="proicons:android" class= "size-6 text-green-600 bg-white rounded-full"/>
+					Kinsta user
+					<Icon name="proicons:chevron-down" class =" size-4 "/>
+				</div>
+				<div class="flex text-white cursor-pointer ">
+					<Icon name="proicons:folder" class="text-white size-6"/>
+					Docs
+				</div>
+				<div class="ml-16 cursor-pointer">
+					<Icon name="proicons:bell-dot" class="text-white size-6"/>	
+
+				</div>
+				
+			</div>
+			
+		</header>
+		<slot />
+	</body>
+</html>
+
